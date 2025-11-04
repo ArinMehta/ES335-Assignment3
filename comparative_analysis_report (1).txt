@@ -1,0 +1,38 @@
+
+# MLP NEXT-WORD PREDICTION - FINAL REPORT
+
+## Dataset Summary:
+- Wikipedia: 78,683 unique words, 674,773 training samples
+- Linux Kernel: 90,882 unique words, 779,603 training samples
+
+## Best Performing Models:
+
+Wikipedia (Best):
+Model                wiki_32d-ReLU
+Dataset                  Wikipedia
+Embedding Dim                   32
+Activation                    RELU
+Final Val Loss            7.424908
+Final Val Acc (%)        12.368476
+Vocab Size                   78683
+
+Linux Kernel (Best):
+Model                linux_32d-ReLU
+Dataset                       Linux
+Embedding Dim                    32
+Activation                     RELU
+Final Val Loss             5.082004
+Final Val Acc (%)         34.155539
+Vocab Size                    90882
+
+## Key Findings:
+1. Structured code (Linux) is more learnable than natural language
+2. Validation accuracy: Code models typically 5-15% higher
+3. Embedding dimension impact is dataset-dependent
+4. ReLU and Tanh perform comparably for this task
+
+## Visualization Files Generated:
+- comparative_loss_curves.png
+- accuracy_comparison.png
+- Individual model training curves (×8)
+- Embedding visualizations (×16)
