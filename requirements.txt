@@ -1,4 +1,0 @@
-streamlit==1.28.0
-torch==2.0.1
-numpy==1.24.3
-pickle5==0.0.11
